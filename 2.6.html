@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Set font family for the entire page */
+            background-color: #f0f0f0; /* Background color of the page */
+            padding: 20px; /* Padding for the body */
+            margin: 0; /* Remove default margin */
+        }
+
+        table {
+            width: 80%; /* Set table width */
+            margin: 20px auto; /* Center-align the table */
+            border-collapse: collapse; /* Collapse border spacing */
+            background-color: #fff; /* White background for the table */
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Box shadow for a subtle effect */
+        }
+
+        th, td {
+            border: 1px solid #ddd; /* Light border for table cells */
+            padding: 8px; /* Padding inside table cells */
+            text-align: center; /* Center-align text in cells */
+        }
+
+        th {
+            background-color: #f2f2f2; /* Light gray background for header cells */
+            color: #333; /* Dark color for header text */
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9; /* Alternate row background color */
+        }
+
+        tr:hover {
+            background-color: #f1f1f1; /* Background color on hover */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>AGE</th>
+                <th>GENDER</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ram</td>
+                <td>21</td>
+                <td>MALE</td>
+            </tr>
+            <tr>
+                <td>Pooja</td>
+                <td>24</td>
+                <td>FEMALE</td>
+            </tr>
+            <tr>
+                <td>Yash</td>
+                <td>23</td>
+                <td>MALE</td>
+            </tr>
+            <tr>
+                <td>Lakshmi</td>
+                <td>22</td>
+                <td>FEMALE</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

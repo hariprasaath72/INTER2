@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Forms Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Set font family for the entire page */
+            background-color: #f0f0f0; /* Background color of the page */
+            margin: 0; /* Remove default margin */
+            padding: 20px; /* Add padding to the body */
+        }
+
+        form {
+            max-width: 600px; /* Limit form width */
+            background-color: #fff; /* Form background color */
+            padding: 20px; /* Padding inside the form */
+            margin: auto; /* Center-align the form */
+            border-radius: 8px; /* Rounded corners for the form */
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Box shadow for a subtle effect */
+        }
+
+        h1 {
+            text-align: center; /* Center-align the heading */
+            margin-bottom: 20px; /* Bottom margin for spacing */
+        }
+
+        label {
+            font-weight: bold; /* Bold labels */
+        }
+
+        input[type=text], input[type=email], input[type=tel] {
+            width: calc(100% - 20px); /* Full width input fields minus padding */
+            padding: 8px; /* Padding inside input fields */
+            margin-bottom: 10px; /* Bottom margin for spacing */
+            border: 1px solid #ccc; /* Light border */
+            border-radius: 4px; /* Rounded corners */
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+        }
+
+        input[type=radio], input[type=checkbox] {
+            margin-bottom: 10px; /* Bottom margin for spacing */
+            margin-right: 5px; /* Right margin for spacing */
+        }
+
+        select {
+            width: calc(100% - 22px); /* Full width select dropdown minus padding and border */
+            padding: 8px; /* Padding inside select dropdown */
+            margin-bottom: 10px; /* Bottom margin for spacing */
+            border: 1px solid #ccc; /* Light border */
+            border-radius: 4px; /* Rounded corners */
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+        }
+
+        input[type=submit] {
+            background-color: #4CAF50; /* Green submit button */
+            color: white; /* Text color */
+            padding: 10px 20px; /* Padding inside submit button */
+            border: none; /* Remove border */
+            border-radius: 4px; /* Rounded corners */
+            cursor: pointer; /* Cursor style */
+            float: right; /* Float button to the right */
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Personal Details</h1>
+        <label for="01">First name:</label><br>
+        <input type="text" name="fn" id="01" placeholder="Enter your first name" autofocus><br><br>
+        <label for="02">Last name:</label><br>
+        <input type="text" name="ln" id="02" placeholder="Enter your last name"><br><br>
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female<br><br>
+        <label>Hobbies:</label><br>
+        <input type="checkbox" name="hobby1" id="05" value="editing"> Editing<br>
+        <input type="checkbox" name="hobby2" id="06" value="reading"> Reading<br>
+        <input type="checkbox" name="hobby3" id="07" value="writing"> Writing<br><br>
+        <label for="email">E-mail:</label><br>
+        <input type="email" name="email" id="email"><br><br>
+        <label for="p">Phone number:</label><br>
+        <input type="tel" maxlength="10" name="phone" id="p"><br><br>
+        <label for="col">Choose college:</label><br>
+        <select name="college" id="col" size="3" multiple>
+            <option value="KEC">KEC</option>
+            <option value="BIT">BIT</option>
+            <option value="VIT">VIT</option>
+            <option value="VECT">VECT</option>
+        </select><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

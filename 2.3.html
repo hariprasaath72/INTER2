@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Navigation Bar with Dropdown</title>
+    <style>
+        /* CSS for Navbar */
+        .navbar {
+            overflow: hidden;
+            background-color: #333; /* Background color of navbar */
+        }
+
+        .navbar a {
+            float: left; /* Float the links to the left */
+            display: block; /* Display links as block elements */
+            color: white; /* Text color */
+            text-align: center; /* Center-align text */
+            padding: 14px 20px; /* Padding inside each link */
+            text-decoration: none; /* Remove underline from links */
+        }
+
+        .navbar a:hover {
+            background-color: #ddd; /* Background color on hover */
+            color: black; /* Text color on hover */
+        }
+
+        /* Dropdown button */
+        .dropdown {
+            float: left; /* Float the dropdown to the left */
+            overflow: hidden; /* Hide overflow content */
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px; /* Font size of dropdown button */
+            border: none; /* Remove borders */
+            outline: none; /* Remove outline */
+            color: white; /* Text color */
+            padding: 14px 20px; /* Padding inside button */
+            background-color: inherit; /* Inherit background color */
+            font-family: inherit; /* Inherit font family */
+            margin: 0; /* Remove margin */
+        }
+
+        /* Dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none; /* Hide dropdown content by default */
+            position: absolute; /* Position dropdown content */
+            background-color: #f9f9f9; /* Background color of dropdown */
+            min-width: 160px; /* Minimum width of dropdown */
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Box shadow for dropdown */
+            z-index: 1; /* Ensure dropdown is above content */
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            float: none; /* Do not float links */
+            color: black; /* Text color */
+            padding: 12px 16px; /* Padding inside each link */
+            text-decoration: none; /* Remove underline from links */
+            display: block; /* Display links as block elements */
+            text-align: left; /* Left-align text */
+        }
+
+        /* Change color of links on hover */
+        .dropdown-content a:hover {
+            background-color: #ddd; /* Background color on hover */
+        }
+
+        /* Show dropdown content when hovering over dropdown button */
+        .dropdown:hover .dropdown-content {
+            display: block; /* Display dropdown content */
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="#service1">Service 1</a>
+                <a href="#service2">Service 2</a>
+                <a href="#service3">Service 3</a>
+            </div>
+        </div>
+        <a href="#contact">Contact</a>
+    </div>
+
+</body>
+</html>
